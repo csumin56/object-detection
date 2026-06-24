@@ -27,7 +27,7 @@ def run_detection(duration):
         annotated = results[0].plot()
 
         remaining = int(duration - elapsed)
-        cv2.putText(annotated, f"남은 시간: {remaining}s", (10, 30),
+        cv2.putText(annotated, f"Time left: {remaining}s", (10, 30),
                     cv2.FONT_HERSHEY_SIMPLEX, 1, (0, 255, 0), 2)
         cv2.imshow("Object Detection", annotated)
 
